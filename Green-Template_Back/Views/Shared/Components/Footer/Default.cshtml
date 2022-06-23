@@ -1,0 +1,25 @@
+﻿@model HomeVM   
+<footer>
+        <section id="footer">
+            <div class="container">
+                    <div class="logo">
+                        <h1><b>@Model.Settings.FooterLogo</b></h1>
+                    </div>
+                    <div class="description">
+                        <i>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</i>
+                    </div>
+                    <div class="social-media">
+                        <ul>
+                           @foreach (var item in Model.SocialMedias)
+                          {
+                              <li><a href="#"><i class="@item.Icon"></i></a></li> 
+                          }
+                        </ul>
+                    </div>
+                    <div class="adress">
+                        <span>© Copyright Green. All Rights Reserved </span><br>
+                        <span>Designed by <a href="#">@Model.Settings.Location</a></span>
+                    </div>
+            </div>
+        </section>
+    </footer>
